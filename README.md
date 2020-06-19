@@ -102,7 +102,7 @@ Best practices for working with JOSE and Decentralized Identifiers.
 }
 ```
 
-#### JWE 
+#### JWE
 
 ```json
 {
@@ -148,5 +148,32 @@ Best practices for working with JOSE and Decentralized Identifiers.
   "iv": "9yic6nusaOi_bjf4ZR-DHw",
   "ciphertext": "IlKAaxdhYczHjoiyLYLSkcuDtzf-hsGVDWJs6rCwNSM",
   "tag": "sXK-b6Zmh59KqwK-MB8VRg"
+}
+```
+
+#### JWE from Encrypted Data Vault
+
+```json
+{
+  "ciphertext": "3SHQQJajNH6q0fyAHmw....",
+  "iv": "QldSPLVnFf2-VXcNLza6mbylYwphW57Q",
+  "protected": "eyJlbmMiOiJYQzIwUCJ9",
+  "recipients": [
+    {
+      "encrypted_key": "BMJ19zK12YHftJ4sr6Pz1rX1HtYni_L9DZvO1cEZfRWDN2vXeOYlwA",
+      "header": {
+        "alg": "ECDH-ES+A256KW",
+        "apu": "Tx9qG69ZfodhRos-8qfhTPc6ZFnNUcgNDVdHqX1UR3s",
+        "apv": "ZGlkOmVsZW06cm9wc3RlbjpFaUQ3ZXlJdU9pekRDY3lvbzBkc25kZmp6ODNOMzUtb29GNWN4cGNqQllBbV9nI1hJR3NkZmlGZTk3MVNWTmFDTEhldnY1aGp3ZkZBQURRbW1ERFZOM2xVX2cjekMxUm51dnc5clZhNkU1VEtGNHVRVlJ1UXVhQ3WZ0I4MVVtMnUxN0Z1N1VLNA",
+        "epk": {
+          "crv": "X25519",
+          "kty": "OKP",
+          "x": "Tx9qG69ZfodhRos-8qfhTPc6ZFnNUcgNDVdHqX1UR3s"
+        },
+        "kid": "did:elem:ropsten:EiD7eyIuOizDCcyoo0dsndfjz83N35-ooF5cxpcjBYAm_g#XIGsdfiFe971SVNaCLHevv5hjwfFAADQmmDDVN3lU_g#zC1Rnuvw9rVa6E5TKF4uQVRuQuaCpVgB81Um2u17Fu7UK"
+      }
+    }
+  ],
+  "tag": "xbfwwDkzOAJfSVem0jr1bA"
 }
 ```
