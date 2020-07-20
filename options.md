@@ -2,8 +2,8 @@
 
 1. `kid` MUST NOT be present in JWKs and MUST be present in JWA/JWE.
 
-- ✅ `kid` is already optional in [JWK rfc7517](https://tools.ietf.org/html/rfc7517)
-- ✅ `kid` would be functionally equivalent to `verificationMethod` already used in LD Proofs.
+   - ✅ `kid` is already optional in [JWK rfc7517](https://tools.ietf.org/html/rfc7517)
+   - ✅ `kid` would be functionally equivalent to `verificationMethod` already used in LD Proofs.
 
 1. `kid` MAY be present in JWKs and MUST be present in JWA/JWE.
 
