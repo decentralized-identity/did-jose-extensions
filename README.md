@@ -102,6 +102,22 @@ Best practices for working with JOSE and Decentralized Identifiers.
 }
 ```
 
+#### JWS
+```json
+{
+  "payload": "AXESIK2wLYjbI6_7RSmECitaiWNg3KizdXHKTezdEDMHpAqT",
+  "signatures": [
+    {
+      "signature": "ay5XcKLR01VMt6_agZFHxwCATEvGkzB_lBz-qfKfQwZKtn13BeL-qrHXExyzn_zEI9MmmX4RhcAdZLrbFbbjBw",
+      "protected": {
+        "alg": "EdDSA",
+        "kid": "did:key:z6MkfZ6S4NVVTEuts8o5xFzRMR8eC6Y1bngoBQNnXiCvhH8H#z6MkfZ6S4NVVTEuts8o5xFzRMR8eC6Y1bngoBQNnXiCvhH8H"
+      }
+    }
+  ]
+}
+```
+
 #### JWE
 
 ```json
