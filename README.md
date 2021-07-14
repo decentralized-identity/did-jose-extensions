@@ -102,6 +102,27 @@ Best practices for working with JOSE and Decentralized Identifiers.
 }
 ```
 
+#### JWS
+```json
+{
+  "payload": "eyJoZWxsbyI6IndvcmxkIn0",
+  "signatures": [
+    {
+      "signature": "cHVXU7QW2pvBJpVIBCLhnkCQ0k4Up3cNRqiyeryRbPOSrZdAoQmWy1OfzNFzgY90nol26KJxHWnknSyu5sY__Q",
+      "protected": "eyJraWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YWg4d2p5OGdyZ3psNTJzbDE4c2J5aXJnaTlicXk5eXp1MjhrYnh2am1oaXA5OXIxNGs_dmVyc2lvbi1pZD0wIzd3WU5IbTNuR29OQTNLdiIsImFsZyI6IkVTMjU2SyJ9"
+    }
+  ]
+}
+```
+
+The `kid` in the decoded protected header contain a DID URL:
+```json
+{
+  "kid": "did:3:kjzl6cwe1jw14ah8wjy8grgzl52sl18sbyirgi9bqy9yzu28kbxvjmhip99r14k?version-id=0#7wYNHm3nGoNA3Kv",
+  "alg": "ES256K"
+}
+```
+
 #### JWE
 
 ```json
